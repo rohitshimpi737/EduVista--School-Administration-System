@@ -1,0 +1,135 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wisdom School</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/ico">
+    <!-- Google fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Template CSS Style link -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+</head>
+
+<body>
+
+<!-- header -->
+<div id="header" th:replace="header :: header"></div>
+<!-- //header -->
+
+<!-- inner banner -->
+<section class="inner-banner py-4">
+    <div class="w3l-breadcrumb py-lg-4">
+        <div class="container pt-4 pb-sm-4">
+            <h4 class="inner-text-title pt-5">About Us</h4>
+            <ul class="breadcrumbs-custom-path">
+                <li><a th:href="@{/index}">Home</a></li>
+                <li class="active"><i class="fas fa-angle-right"></i>About Us</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- //inner banner -->
+
+<!-- team block -->
+<section class="w3l-team-13 py-4" id="team">
+    <div class="container py-md-4 py-4">
+        <div class="title-main text-center mx-auto mb-md-5 mb-4" style="max-width:500px;">
+            <p class="text-uppercase">Our Team</p>
+            <h3 class="title-style">Meet our Teachers</h3>
+        </div>
+        <div class="row text-center left-side">
+            <div class="col-lg-3 col-6">
+                <div class="image-one">
+                    <a href="#team">
+                        <img src="assets/images/team1.png" class="arrow-png img-responsive"/>
+                        <h4>Suhani Singh</h4>
+                        <div class="buttons-teams2 mt-2">
+                            <a href="#team"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#team"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#team"><i class="fab fa-google-plus-square"></i></a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="image-one">
+                    <a href="#team">
+                        <img src="assets/images/team2.png" class="arrow-png img-responsive">
+                        <h4>Shubham Patil</h4>
+                        <div class="buttons-teams2 mt-2">
+                            <a href="#team"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#team"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#team"><i class="fab fa-google-plus-square"></i></a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6 mt-lg-0 mt-4">
+                <div class="image-one">
+                    <a href="#team">
+                        <img src="assets/images/team3.png" class="arrow-png img-responsive">
+                        <h4>Sanit Dhuri</h4>
+                        <div class="buttons-teams2 mt-2">
+                            <a href="#team"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#team"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#team"><i class="fab fa-google-plus-square"></i></a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6 mt-lg-0 mt-4">
+                <div class="image-one">
+                    <a href="#team">
+                        <img src="assets/images/team4.png" class="arrow-png img-responsive">
+                        <h4>Ganesh Babar</h4>
+                        <div class="buttons-teams2 mt-2">
+                            <a href="#team"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#team"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#team"><i class="fab fa-google-plus-square"></i></a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //team block -->
+
+<!-- about-2 section -->
+<section class="w3l-about-2 pb-5 pt-4">
+    <div class="container pb-md-5 pb-4">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-lg-6 about-2-secs-right mb-lg-0 mb-4 text-center pe-lg-4">
+                <img src="assets/images/image.jpg" alt="" class="img-fluid radius-image m-auto"/>
+            </div>
+            <div class="col-lg-6 about-2-secs-left ps-lg-5">
+                <p class="text-uppercase">Our Environment</p>
+                <h3 class="title-style mb-sm-3 mb-2">Clean & Safe Environment</h3>
+                <p>Wisdom School maintains the Safest environment for both teachers and students
+                    by sanitizing the schools daily. Enough security is in place with the help of
+                    dedicated security team and cameras inside the campus.</p>
+                <div class="d-flex align-items-center mt-5">
+                    <a class="btn btn-style btn-style-3" th:href="@{/contact}">Contact Us</a>
+                    <a class="btn btn-style-primary ms-4" th:href="@{/contact}">Learn More <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //about-2 section -->
+
+<!-- footer block -->
+<div th:replace="footer :: footer">...</div>
+<!-- //footer block -->
+</body>
+
+</html>
